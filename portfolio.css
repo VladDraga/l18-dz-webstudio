@@ -35,6 +35,7 @@ body {
 .navigation-list {
   list-style: none;
   font-weight: 500;
+  position: relative;
 }
 
 .navigation-item:not(:last-child) {
@@ -48,6 +49,7 @@ body {
 .navigation-link {
   color: black;
   text-decoration: none;
+  position: relative;
 }
 
 .navigation-link_active {
@@ -55,7 +57,6 @@ body {
 }
 
 .navigation-link {
-  position: relative;
   padding-bottom: 10px;
 }
 
@@ -73,16 +74,33 @@ body {
   color: var(--color-acent);
 }
 
-.navigation-link:hover {
-  color: var(--color-acent);
-}
-
 .icon-mail {
   padding-right: 10px;
 }
 
 .icon-tel {
   padding-right: 10px;
+}
+
+.current {
+  color: var(--color-acent);
+}
+
+.current:hover::after,
+.current:focus::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--color-acent);
+  position: absolute;
+  top: 48px;
+  left: 0px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 /* Клас Nav-btn */
@@ -115,6 +133,42 @@ body {
 }
 
 /* Клас Photo-list */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 370px;
+  height: 294px;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 0;
+  transform: translateY(100%);
+  transition-property: transform background-color;
+  transition-duration: 300ms;
+  transition-delay: 0;
+}
+
+.overlay-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.54px;
+  width: 322px;
+}
+
+.box-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.box-overlay:hover .overlay {
+  opacity: 1;
+  transform: translate(0);
+  transition: transform 300ms;
+  transition-delay: 0;
+}
 
 .photo-list .container {
   display: flex;

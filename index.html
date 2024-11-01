@@ -21,7 +21,7 @@
                     <li class="navigation-item"><a class="navigation-link" href="#"><img class="logo"
                                 src="webstudiophoto/webstudio.svg" alt=""></a></li>
                     <li class="navigation-item"><a class="navigation-link" href="#">Студія</a></li>
-                    <li class="navigation-item"><a class="navigation-link" href="portfolio.html">Портфоліо</a></li>
+                    <li class="navigation-item"><a class="navigation-link current" href="portfolio.html">Портфоліо</a></li>
                     <li class="navigation-item"><a class="navigation-link header-link_active" href="#">Контакти</a></li>
                     <li class="navigation-item"><a class="navigation-link" href="mailto:info@devstudio.com"><i
                                 class="icon-mail icon-envelope"></i>info@devstudio.com</a></li>
@@ -37,7 +37,7 @@
         <section class="solution">
             <div class="container">
                 <h1 class="solution-text">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                <button class="solution-button" type="button">Замовити послугу</button>
+                <button class="solution-button" type="button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="info">
@@ -101,10 +101,10 @@
                             <h4 class="team-figure1-name">Ігор Дем'яненко</h4>
                             <p class="team-figure1-text">Product Designer</p>
                             <div class="team-social">
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-insta"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-twitter"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-facebook"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-linkedin"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-insta"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-twitter"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-facebook"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-linkedin"></i></a>
                             </div>
                         </div>
                     </li>
@@ -115,10 +115,10 @@
                             <h4 class="team-figure2-name">Ольга Рєпіна</h4>
                             <p class="team-figure2-text">Frontend Developer</p>
                             <div class="team-social">
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-insta"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-twitter"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-facebook"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-linkedin"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-insta"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-twitter"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-facebook"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-linkedin"></i></a>
                             </div>
                         </div>
                     </li>
@@ -129,10 +129,10 @@
                             <h4 class="team-figure3-name">Микола Тарасов</h4>
                             <p class="team-figure3-text">Marketing</p>
                             <div class="team-social">
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-insta"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-twitter"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-facebook"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-linkedin"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-insta"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-twitter"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-facebook"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-linkedin"></i></a>
                             </div>
                         </div>
                     </li>
@@ -143,10 +143,10 @@
                             <h4 class="team-figure4-name">Михайло Єрмаков</h4>
                             <p class="team-figure4-text">UI Designer</p>
                             <div class="team-social">
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-insta"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-twitter"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-facebook"></i></a>
-                                    <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-linkedin"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-insta"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-twitter"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-facebook"></i></a>
+                                <a class="team-icon-link" href="#"><i class="team-icon-fonts icon-linkedin"></i></a>
                             </div>
                         </div>
                     </li>
@@ -179,22 +179,79 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-mail-tel">
-            <img class="footer-photo" src="webstudiophoto/webstudio.svg" alt="">
-            <p class="footer-a">м. Київ, пр-т Лесі Українки, 26</p>
-            <p class="footer-ab"><a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
-            <p class="footer-ab1"><a class="footer-tel" href="tel:+38 096 111 11 11">+38 096 111 1111</a></p>
-        </div>
+                <img class="footer-photo" src="webstudiophoto/webstudio.svg" alt="">
+                <p class="footer-a">м. Київ, пр-т Лесі Українки, 26</p>
+                <p class="footer-ab"><a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></p>
+                <p class="footer-ab1"><a class="footer-tel" href="tel:+38 096 111 11 11">+38 096 111 1111</a></p>
+            </div>
             <div class="footer-links">
                 <p class="footer-links-text">ПРИЄДНУЙТЕСЬ</p>
                 <div class="footer-links-icon">
-                        <a class="icon-link-footer" href="#"><i class="icon-fonts-link icon-insta"></i></a>
-                        <a class="icon-link-footer" href="#"><i class="icon-fonts-link icon-twitter"></i></a>
-                        <a class="icon-link-footer" href="#"><i class="icon-fonts-link icon-facebook"></i></a>
-                        <a class="icon-link-footer" href="#"><i class="icon-fonts-link icon-linkedin"></i></a>
-                    </div>
+                    <a class="icon-link-footer" href="#"><i class="icon-fonts-link icon-insta"></i></a>
+                    <a class="icon-link-footer" href="#"><i class="icon-fonts-link icon-twitter"></i></a>
+                    <a class="icon-link-footer" href="#"><i class="icon-fonts-link icon-facebook"></i></a>
+                    <a class="icon-link-footer" href="#"><i class="icon-fonts-link icon-linkedin"></i></a>
                 </div>
             </div>
         </div>
+        </div>
+
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__btn" data-modal-close>
+          <svg class="modal__svg">
+            <use href="./webstudiophoto/symbol-defs.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <h4 class="modal__title">Залиште свої дані, ми вам передзвонимо</h4>
+        <form class="modal__form">
+          <div class="modal__box">
+            <label class="modal-lab"
+              >Ім'я
+              <input type="text" class="modal__inp" required />
+              <svg class="modal__icon">
+                <use href="./webstudiophoto/symbol-defs.svg#icon-user"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="modal__box">
+            <label class="modal__lab"
+              >Телефон
+              <input type="tel" class="modal__inp" required />
+              <svg class="modal__icon">
+                <use href="./webstudiophoto/symbol-defs.svg#icon-phone"></use>
+              </svg>
+            </label>
+          </div>
+          <div class="modal__box">
+            <label class="modal__lab"
+              >Пошта
+              <input type="email" class="modal__inp" required />
+              <svg class="modal__icon">
+                <use href="./webstudiophoto/symbol-defs.svg#icon-envelop"></use>
+              </svg>
+            </label>
+          </div>
+          <label class="modal__lab"
+            >Коментар
+            <textarea
+              name="Коментар"
+              class="modal__coment"
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <label class="check">
+            <input type="checkbox" class="modal__chek" required />
+            Погоджуюся з розсилкою та приймаю
+            <a href="#" class="check__link">Умови договору</a>
+          </label>
+          <div class="check__button">
+            <button type="submit" class="check__btn">Відправити</button>
+          </div>
+        </form>
+      </div>
+    </div>
 </body>
+<script src="./js/modal.js"></script>
 </html>
